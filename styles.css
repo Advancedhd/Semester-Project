@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: white;
   z-index: -1;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .fasfabars {
-  color: coral;
+  color: white;
   float: right;
   padding: 40px;
   display: block;
