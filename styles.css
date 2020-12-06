@@ -19,10 +19,21 @@ main {
   width: auto;
 }
 
+.navhomebutton {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header {
   z-index: 6;
   height: 100px;
   background-color: black;
+}
+
+.a.active {
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(12, 122, 12);
 }
 
 .navigationbar {
@@ -34,7 +45,8 @@ header {
 
 .nav-links li {
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   z-index: 6;
 }
@@ -43,8 +55,10 @@ header {
   display: inline-block;
   color: white;
   text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 6;
 }
 
@@ -68,7 +82,7 @@ header {
 .fasfabars {
   color: white;
   float: right;
-  padding: 40px;
+  padding: 33px;
   display: block;
   font-size: 30px;
 }
@@ -80,6 +94,130 @@ header {
 #hamburgermeny:checked ~ .nav-links {
   display: block;
   position: relative;
+  margin-top: -5px;
   z-index: 6;
   background-color: black;
+}
+
+.hometitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8.8em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.abouttitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.exploretitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 4em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.bookingtitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 4em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#mainhome div {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.graybackground {
+  color: white;
+  background-color: #414141;
+  margin-top: -4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blackbackground {
+  color: white;
+  background-color: #000000;
+  margin-top: -4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contactus {
+  color: white;
+  background-color: black;
+  margin-top: -4px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20%;
+}
+
+.contactus div {
+  padding-top: 20px;
+}
+
+.whitebackground {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.aboutbutton,
+.explorebutton,
+.bookbutton {
+  width: 200px;
+  margin-left: 27%;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #ac4a35;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto auto;
+}
+
+footer div {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  cursor: pointer;
+}
+
+.griditem1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-decoration: none;
+}
+
+.griditem2 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.griditem3 {
+  grid-column-start: 1;
+  grid-column-end: 6;
 }

@@ -26,7 +26,7 @@
     </header>
     <main id="mainhome">
         <div>
-            <h1 class="pagetitle">Booking</h1>
+            <h1 class="bookingtitle">Booking</h1>
             <div class="card">
                 <div>
                     <h1 class="bookingtext">Checkout</h1>
@@ -43,26 +43,28 @@
                         <input type="text" name="phonenumber" id="phonenumber" class="booking_form_input" required>
                     </div>
                     <div class="bookingcontent">
-                        <label for="availabledates">Expiration</label>
+                        <label for="availabledates">Available Dates</label>
                         <input type="text" name="availabledates" id="availabledates" class="booking_form_input" required>
                     </div>
-                    <div class="bookingbutton">
-                        <button type="submit">Book!</button>
+                    <div class="bookingcontent">
+                        <label for="availabletimes">Available Time</label>
+                        <input type="text" name="availabletimes" id="availabletimes" class="booking_form_input" required>
                     </div>
-        
-                    <button type="submit" Class="AboutUs">About Us</button>
+                    <div class="bookingbutton">
+                        <button type="submit" class="bookbutton">Book!</button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <li><a href="index.html">Home</a></li>
+    <footer class="blackbackground">
+        <div class="griditem1">
+            <li class="navhomebutton"><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="explore.html">Explore</a></li>
             <li><a href="booking.html">Booking</a></li>
         </div>
-        <div>
+        <div class="griditem2">
             <h3>Opening Hours</h3>
             <h4>Monday: Closed</h4>
             <h4>Tuesday: 10:00 - 16:00</h4>
@@ -72,8 +74,8 @@
             <h4>Saturday: 10:00 - 16:00</h4>
             <h4>Sunday: 09:00 - 13:00</h4>
         </div>
-        <div>
-            Copyright &copy; Gamehub Corp 2020
+        <div class="griditem3">
+            Copyright &copy; Science Museum 2020
         </div>
         </footer>
 </body>
