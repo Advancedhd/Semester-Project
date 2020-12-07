@@ -17,19 +17,20 @@
             <input type="checkbox" id="hamburgermeny">
                 <div class="fasfabars"><label for="hamburgermeny"><i class="fas fa-bars"></i></label></div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html" >Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="explore.html">Explore</a></li>
-                <li><a href="booking.html">Booking</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
             </ul>
         </nav>
     </header>
     <main id="mainhome">
         <div>
             <h1 class="bookingtitle">Booking</h1>
-            <div class="card">
-                <div>
-                    <h1 class="bookingtext">Checkout</h1>
+            <div class="graybackground">
+                <img src="Images/room.jpg" alt="Picture of child solving math" width="100%" height="auto">
+                <div class="carditem1">
+                    <h1 class="bookingtext">Info</h1>
                     <div class="bookingcontent">
                         <label for="Name">Your Name</label>
                         <input type="text" name="Name" id="name" class="booking_form_input" required>
@@ -38,17 +39,31 @@
                         <label for="number">Email</label>
                         <input type="text" name="number" id="number" class="booking_form_input" required>
                     </div>
-                    <div class="bookingontent">
+                    <div class="bookingcontent">
                         <label for="phonenumber">Phone Number!</label>
                         <input type="text" name="phonenumber" id="phonenumber" class="booking_form_input" required>
                     </div>
+                </div>
+                <div class="carditem2"> 
                     <div class="bookingcontent">
                         <label for="availabledates">Available Dates</label>
-                        <input type="text" name="availabledates" id="availabledates" class="booking_form_input" required>
+                        <form>
+                            <select name="country">
+                                <option value="1stJan">1st of January</option>
+                                <option value="2ndJan">2nd of January</option>
+                                <option value="3rdJan">3rd of January</option>
+                                </select>
+                          </form>
                     </div>
                     <div class="bookingcontent">
                         <label for="availabletimes">Available Time</label>
-                        <input type="text" name="availabletimes" id="availabletimes" class="booking_form_input" required>
+                        <form>
+                            <select name="times">
+                                <option value="10:30">10:30</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:30">12:30</option>
+                            </select>
+                          </form>
                     </div>
                     <div class="bookingbutton">
                         <button type="submit" class="bookbutton">Book!</button>
@@ -57,7 +72,7 @@
             </div>
         </div>
     </main>
-    <footer class="blackbackground">
+    <footer class="blackbackground" id="bookingfooter">
         <div class="griditem1">
             <li class="navhomebutton"><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
