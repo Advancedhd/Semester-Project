@@ -202,9 +202,25 @@ header {
 }
 
 .aboutbutton,
-.explorebutton {
+.explorebutton,
+.bookbutton {
   width: 200px;
   margin-left: 27%;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #ac4a35;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bookingbutton {
+  width: 200px;
+  margin-left: -15%;
   margin-right: auto;
   margin-top: 15px;
   background-color: #ac4a35;
@@ -298,16 +314,36 @@ footer a {
   }
 
   .aboutbutton,
-  .explorebutton {
+  .explorebutton,
+  .bookingbutton {
     margin-left: 33%;
   }
 
   .card {
-    background-color: darkcyan;
+    background-color: #ac4a35;
   }
 
   .nav {
     width: 70%;
     margin-left: 15%;
+  }
+
+  .nav-links li {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 50000px) {
+  .fasfabars {
+    display: none;
+  }
+
+  .nav-links {
+    font-size: 100%;
+    padding-top: 25px;
+    display: flex;
+    float: right;
+    text-decoration: none;
+    text-align: center;
   }
 }
