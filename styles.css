@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
@@ -182,6 +183,7 @@ header {
 .whitebackground {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: white;
 }
 
 .bookbutton {
@@ -246,4 +248,66 @@ footer a {
   grid-column-start: 1;
   grid-column-end: 6;
   font-size: 10px;
+}
+
+.hallpic,
+.museumpic,
+.heartpic,
+.mathpic,
+.respic,
+.roompic {
+  width: 100%;
+}
+
+/*desktop*/
+/*resolution 1100-1900px*/
+
+@media only screen and (min-width: 650px) and (max-width: 50000px) {
+  .main {
+    background-color: black;
+  }
+
+  .hallpic,
+  .museumpic,
+  .heartpic,
+  .mathpic,
+  .respic,
+  .roompic {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+  }
+
+  .graybackground,
+  .blackbackground,
+  .whitebackground {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .graybackground p,
+  .blackbackground p,
+  .whitebackground p {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .whitebackground h5 {
+    margin-left: 35%;
+    margin-bottom: 20px;
+  }
+
+  .aboutbutton,
+  .explorebutton {
+    margin-left: 33%;
+  }
+
+  .card {
+    background-color: darkcyan;
+  }
+
+  .nav {
+    width: 70%;
+    margin-left: 15%;
+  }
 }
