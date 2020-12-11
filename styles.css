@@ -203,7 +203,7 @@ header {
 
 button {
   width: 200px;
-  margin-left: 42%;
+  margin-left: 30%;
   margin-right: auto;
   margin-top: 15px;
   background-color: #ac4a35;
@@ -273,6 +273,10 @@ h1 {
   font-size: 2.5em;
 }
 
+.whitebackground h4 {
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
 h5 {
   margin-left: 38%;
   margin-right: auto;
@@ -280,10 +284,18 @@ h5 {
   font-size: 1.5em;
 }
 
+.whitebackground h1 {
+  margin-left: 30%;
+}
+
 /*desktop*/
 /*resolution 1100-1900px*/
 
 @media only screen and (min-width: 1310px) and (max-width: 50000px) {
+  .button {
+    margin-left: 40%;
+  }
+
   .main {
     background-color: black;
   }
@@ -293,7 +305,9 @@ h5 {
   h5 {
     font-size: 2em;
   }
-
+  .whitebackground h4 {
+    margin-left: 40%;
+  }
   .hallpic,
   .museumpic,
   .heartpic,
