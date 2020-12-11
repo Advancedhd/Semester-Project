@@ -271,16 +271,44 @@ footer a {
 .heartpic,
 .mathpic,
 .respic,
-.roompic {
+.roompic,
+.cosmopic,
+.evolpic,
+.robaipic,
+.ecopic {
   width: 100%;
+}
+
+.graybackground p,
+.blackbackground p,
+.whitebackground p {
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h5 {
+  margin-left: 38%;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 /*desktop*/
 /*resolution 1100-1900px*/
 
-@media only screen and (min-width: 650px) and (max-width: 50000px) {
+@media only screen and (min-width: 1310px) and (max-width: 50000px) {
   .main {
     background-color: black;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h5 {
+    font-size: 2em;
   }
 
   .hallpic,
@@ -288,7 +316,11 @@ footer a {
   .heartpic,
   .mathpic,
   .respic,
-  .roompic {
+  .roompic,
+  .cosmopic,
+  .evolpic,
+  .robaipic,
+  .ecopic {
     width: 60%;
     height: auto;
     margin-left: 20%;
@@ -308,8 +340,11 @@ footer a {
     margin-bottom: 20px;
   }
 
-  .whitebackground h5 {
-    margin-left: 35%;
+  .whitebackground h5,
+  .blackbackground h5,
+  .graybackground h5 {
+    margin-left: 44%;
+    margin-right: auto;
     margin-bottom: 20px;
   }
 
@@ -331,9 +366,6 @@ footer a {
   .nav-links li {
     margin-left: 100px;
   }
-}
-
-@media only screen and (min-width: 1150px) and (max-width: 50000px) {
   .fasfabars {
     display: none;
   }
