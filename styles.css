@@ -147,8 +147,13 @@ header {
   font-family: Garamond, "Times New Roman", Times, serif;
 }
 
+header {
+  width: 100%;
+}
+
 #mainhome div {
   font-family: Verdana, Tahoma, sans-serif;
+  width: 100%;
 }
 
 .graybackground {
@@ -336,7 +341,7 @@ h5 {
   .graybackground,
   .blackbackground,
   .whitebackground {
-    width: 60%;
+    width: 60% !important;
     margin-left: 20%;
   }
 
