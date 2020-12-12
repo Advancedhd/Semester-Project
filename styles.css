@@ -308,6 +308,11 @@ h5 {
   .whitebackground h4 {
     margin-left: 40%;
   }
+
+  h1.bookingtitle {
+    margin-left: 8.8em;
+  }
+
   .hallpic,
   .museumpic,
   .heartpic,
