@@ -2,12 +2,14 @@
 <html>
 
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="The booking page, where you can book a guide">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/698b6da628.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <title>Home</title>
 </head>
 
 <body>
@@ -37,26 +39,12 @@
                 <img class="roompic" src="Images/room.jpg" alt="Picture of child solving math">
             </div>
             <div class="graybackground">
-                <div class="carditem1">
-                    <h1 class="bookingtext">Info</h1>
-                    <div class="bookingcontent">
-                        <label for="Name">Your Name</label>
-                        <input type="text" name="Name" id="name" class="booking_form_input" required>
-                    </div>
-                    <div class="bookingcontent">
-                        <label for="number">Email</label>
-                        <input type="text" name="number" id="number" class="booking_form_input" required>
-                    </div>
-                    <div class="bookingcontent">
-                        <label for="phonenumber">Phone Number!</label>
-                        <input type="text" name="phonenumber" id="phonenumber" class="booking_form_input" required>
-                    </div>
-                </div>
+                <h1 class="bookingtext">Info</h1>
                 <div class="carditem2"> 
                     <div class="bookingcontent">
                         <label for="availabledates">Available Dates</label>
                         <form>
-                            <select name="country">
+                            <select name="date">
                                 <option value="1stJan">1st of January</option>
                                 <option value="2ndJan">2nd of January</option>
                                 <option value="3rdJan">3rd of January</option>
@@ -73,10 +61,25 @@
                             </select>
                           </form>
                     </div>
-                    <div>
-                        <button type="submit" class="bookbutton">Book!</button>
-                    </div>
                 </div>
+                <form class="carditem1">
+                    
+                    <div class="bookingcontent">
+                        <label for="name">Your Name*</label>
+                        <input placeholder="Your name"type="text" id="name" name="Name" class="nameField" required>
+                    </div>
+                    <div class="bookingcontent">
+                        <label for="email">Email*</label>
+                        <input placeholder="Your email"type="text" id="email" name="email" class="emailField" required>
+                    </div>
+                    <div class="bookingcontent">
+                        <label for="phonenumber">Phone Number!</label>
+                        <input placeholder="Your phone number"type="text" id="phonenumber "name="phonenumber" class="phonenumberField" required>
+                    </div>
+                    <div class="msg" style="color: red;"></div>
+                    <div class="validated" style="color: lime;"></div>
+                    <button type="submit" class="bookbutton">Book!</button>
+                </form>
             </div>
         </div>
     </main>
@@ -103,5 +106,5 @@
         </div>
         </footer>
 </body>
-
+<script src="./js/validation.js" defer></script>
 </html>

@@ -8,6 +8,7 @@
 body {
   background-color: white;
   z-index: -1;
+  text-align: center;
 }
 
 main {
@@ -107,6 +108,14 @@ header {
   background-color: black;
 }
 
+.name {
+  margin-left: 27px !important;
+}
+
+.email {
+  margin-left: 71px !important;
+}
+
 .homebutton {
   margin-left: 50%;
 }
@@ -178,7 +187,6 @@ header {
   margin-top: -4px;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 20%;
 }
 
 .contactus div {
@@ -208,7 +216,6 @@ header {
 
 button {
   width: 200px;
-  margin-left: 30%;
   margin-right: auto;
   margin-top: 15px;
   background-color: #ac4a35;
@@ -284,28 +291,26 @@ h1 {
 }
 
 .whitebackground h4 {
-  margin-left: 30%;
   margin-bottom: 20px;
 }
 h5 {
-  margin-left: 38%;
   margin-right: auto;
   margin-bottom: 20px;
   font-size: 1.5em;
 }
 
 .whitebackground h1 {
-  margin-left: 30%;
+  margin-bottom: 30px;
+}
+
+.bookingcontent {
+  margin-bottom: 10px;
 }
 
 /*desktop*/
 /*resolution 1100-1900px*/
 
-@media only screen and (min-width: 1310px) and (max-width: 50000px) {
-  .button {
-    margin-left: 40%;
-  }
-
+@media only screen and (min-width: 1100px) and (max-width: 50000px) {
   .main {
     background-color: black;
   }
@@ -314,13 +319,6 @@ h5 {
   }
   h5 {
     font-size: 2em;
-  }
-  .whitebackground h4 {
-    margin-left: 40%;
-  }
-
-  h1.bookingtitle {
-    margin-left: 8.8em;
   }
 
   .hallpic,
@@ -335,7 +333,22 @@ h5 {
   .ecopic {
     width: 60%;
     height: auto;
-    margin-left: 20%;
+  }
+
+  .museumpic {
+    height: 600px;
+  }
+
+  .hallpic {
+    height: 600px;
+  }
+  .respic,
+  .heartpic,
+  .roompic,
+  .cosmopic,
+  .robaipic,
+  .ecopic {
+    height: 700px;
   }
 
   .graybackground,
@@ -350,14 +363,15 @@ h5 {
   .whitebackground p {
     padding-left: 10px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .whitebackground h5,
   .blackbackground h5,
   .graybackground h5 {
-    margin-left: 40%;
     margin-right: auto;
     margin-bottom: 20px;
+    text-align: center !important;
   }
 
   .aboutbutton,
