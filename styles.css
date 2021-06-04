@@ -161,7 +161,7 @@ header {
 }
 
 #mainhome div {
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: "Raleway", Tahoma, sans-serif;
   width: 100%;
 }
 
@@ -282,12 +282,16 @@ footer a {
 }
 
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Raleway", "Times New Roman", Times, serif;
 }
 
 h1 {
   font-size: 2.5em;
   font-family: garamond !important;
+}
+
+.griditem1 li {
+  padding-bottom: 15px;
 }
 
 .whitebackground h4 {
